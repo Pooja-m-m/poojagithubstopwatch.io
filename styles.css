@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f27a7a;
+    margin: 0;
+}
+.stopwatch {
+    background: rgb(77, 238, 219);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.time {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.start::before {
+    content: "▶"; 
+    margin-right: 5px;
+}
+
+.stop::before {
+    content: "⏸";
+    margin-right: 5px;
+}
+
+.reset::before {
+    content: "🔄"; 
+    margin-right: 5px;
+}
+
+.start { background: green; color: white; }
+.stop { background: red; color: white; }
+.reset { background: gray; color: white; }
